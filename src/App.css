@@ -12,19 +12,17 @@ html, body {
   padding: 0;
   width: 100%;
   min-height: 100%;
-  overflow-x: hidden;
-  background: #000; /* fallback */
+  background: #000;
   font-family: sans-serif;
   overscroll-behavior: none;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
-
-
 
 /* Main app container */
 #root {
   position: relative;
-  min-height: 100vh;
+  min-height: 100svh;
   width: 100%;
   z-index: 0;
   background: radial-gradient(ellipse at top left, #3a0ca3 0%, transparent 25%),
@@ -125,6 +123,8 @@ html, body {
 .table {
   animation: transit 2s ease-in-out forwards;
   overflow-x: auto;
+  display: block;
+  width: 100%;
 }
 
 @keyframes transit {

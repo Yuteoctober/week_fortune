@@ -1,3 +1,4 @@
+
 import { useState, useRef, ChangeEvent } from 'react';
 import axios from 'axios';
 import './App.css';
@@ -190,7 +191,7 @@ function App(): JSX.Element {
         </div>
 
         {loading && !fortune && (
-          <div className="absolute left-1/2 -translate-x-1/2 mt-[10rem] ease-in-out transition-all duration-[2000ms]">
+          <div className="absolute left-1/2 -translate-x-1/2 mt-[4rem] ease-in-out transition-all duration-[2000ms]">
             <img src={loader} alt="loading..." className="loader w-[200px]" />
           </div>
         )}
@@ -202,9 +203,9 @@ function App(): JSX.Element {
               <p className="relative top-0 left-1.5">{getDateRange()}</p>
             </div>
 
-            <div className="table overflow-x-auto mt-6 text-black w-[98%] md:w-[94%] mx-auto max-w-[1200px] transition-all duration-[2000ms] ease-in-out">
+            <div className="table mt-6 text-black w-[98%] md:w-[94%] mx-auto max-w-[1200px] transition-all duration-[2000ms] ease-in-out">
               <table className="min-w-full border-collapse border border-gray-300 text-sm md:text-base">
-                <thead className="bg-gray-700/70 text-left text-white">
+                <thead className="bg-gray-700/70 text-left text-white ">
                   <tr>
                     <th className="border border-gray-300 p-2">Day</th>
                     <th className="border border-gray-300 p-2">Energy</th>

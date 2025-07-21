@@ -125,7 +125,7 @@ function App(): JSX.Element {
   return (
     <>
       <div className="stars-layer"></div>
-      <div className="w-[100svw] relative mx-auto min-h-screen">
+      <div className="w-[100svw] relative mx-auto min-h-[100svh]">
         <div className="w-full relative pt-10 text-center text-black">
           <h2 className="maintext text-[38px] md:text-[48px]">Cosmic Fortune Teller</h2>
           <h2 className="text-[16px] pt-2">

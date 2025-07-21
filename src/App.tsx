@@ -125,15 +125,15 @@ function App(): JSX.Element {
   return (
     <>
       <div className="stars-layer"></div>
-      <div className="w-[100svw] relative mx-auto min-h-[100svh]">
-        <div className="w-full relative pt-10 text-center text-black">
+      <div className="w-[100svw] relative mx-auto min-h-[100svh] ">
+        <div className="w-[96%] mx-auto relative pt-10 text-center text-black">
           <h2 className="maintext text-[38px] md:text-[48px]">Cosmic Fortune Teller</h2>
           <h2 className="text-[16px] pt-2">
             Discover your weekly astrology reading through the stars
           </h2>
         </div>
 
-        <div className="birthinfo_container w-[90%] md:w-[94%] max-w-[1200px] h-fit relative mx-auto mt-8 p-6 border-2 md:pb-10 border-amber-50/70 rounded-lg ">
+        <div className="birthinfo_container w-[90%] md:w-[94%] max-w-[1200px] h-fit relative mx-auto p-6 border-2 md:pb-10 border-amber-50/70 rounded-lg ">
           <h2 className="text-[30px] font-bold">Birth Details</h2>
           <p>Enter your birth details to receive your personalized cosmic reading</p>
 

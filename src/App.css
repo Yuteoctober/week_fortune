@@ -31,7 +31,6 @@ html, body {
               radial-gradient(ellipse at center, #4361ee 0%, #000000 100%);
   background-blend-mode: screen;
   animation: hueShift 30s ease-in-out infinite;
-  overflow-x: hidden;
 }
 
 /* Hue shift animation for cosmic effect */
@@ -124,6 +123,7 @@ html, body {
 
 .table {
   animation: transit 2s ease-in-out forwards;
+  overflow-x: auto;
 }
 
 @keyframes transit {

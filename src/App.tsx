@@ -197,7 +197,7 @@ function App(): JSX.Element {
 
         {fortune && (
           <>
-            <div className="touch-auto w-[90%] md:w-[94%] max-w-[1200px] mx-auto mt-6 text-black">
+            <div className="w-[90%] md:w-[94%] max-w-[1200px] mx-auto mt-6 text-black">
               <h2 className="relative text-[40px]">Your Weekly Astrology Reading</h2>
               <p className="relative top-0 left-1.5">{getDateRange()}</p>
             </div>

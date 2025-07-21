@@ -16,6 +16,7 @@ html, body {
   background: #000; /* fallback */
   font-family: sans-serif;
   overscroll-behavior: none;
+  scroll-behavior: smooth;
 }
 
 

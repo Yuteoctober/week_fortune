@@ -70,7 +70,7 @@ html, body {
 }
 
 .btn_submit:hover {
-  background: rgb(26, 24, 24);
+  background: rgb(37, 34, 34);
 }
 
 /* 🌟 Animated Stars Background Layer */
@@ -121,7 +121,6 @@ html, body {
 
 .table {
   animation: transit 2s ease-in-out forwards;
-
 }
 
 @keyframes transit {

@@ -83,6 +83,7 @@ function App(): JSX.Element {
       setLoading(false);
       return;
     }
+    
 
     try {
       const apiUrl = 'https://ai-tweet-bot-mp70.onrender.com/fortune/tell';
@@ -191,7 +192,7 @@ function App(): JSX.Element {
         </div>
 
         {loading && !fortune && (
-          <div className="absolute left-1/2 -translate-x-1/2 mt-[4rem] ease-in-out transition-all duration-[2000ms]">
+          <div className="absolute left-1/2 opacity-50 -translate-x-1/2 top-1/3 z-50 ease-in-out transition-all duration-[2000ms]">
             <img src={loader} alt="loading..." className="loader w-[200px]" />
           </div>
         )}

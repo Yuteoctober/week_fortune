@@ -11,7 +11,7 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  min-height: 100%;
+  min-height: 100svh;
   background: #000;
   font-family: sans-serif;
   overscroll-behavior: none;
@@ -22,7 +22,7 @@ html, body {
 /* Main app container */
 #root {
   position: relative;
-  min-height: 100svh;
+  min-height: 100%;
   width: 100%;
   z-index: 0;
   background: radial-gradient(ellipse at top left, #3a0ca3 0%, transparent 25%),

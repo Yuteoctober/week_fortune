@@ -123,7 +123,7 @@ function App(): JSX.Element {
   return (
     <>
       <div className="stars-layer"></div>
-      <div className="w-[100svw] relative mx-auto min-h-screen">
+      <div className="touch-none w-[100svw] relative mx-auto min-h-screen">
         <div className="w-full relative pt-10 text-center text-black">
           <h2 className="maintext text-[38px] md:text-[48px]">Cosmic Fortune Teller</h2>
           <h2 className="text-[16px] pt-2">
@@ -197,7 +197,7 @@ function App(): JSX.Element {
 
         {fortune && (
           <>
-            <div className="w-[90%] md:w-[94%] max-w-[1200px] mx-auto mt-6 text-black">
+            <div className="touch-auto w-[90%] md:w-[94%] max-w-[1200px] mx-auto mt-6 text-black">
               <h2 className="relative text-[40px]">Your Weekly Astrology Reading</h2>
               <p className="relative top-0 left-1.5">{getDateRange()}</p>
             </div>

@@ -13,14 +13,6 @@ function App(): JSX.Element {
   const [fortune, setFortune] = useState<string>('');
   const [loading, setLoading] = useState<boolean>(false);
 
-  useEffect(() => {
-    document.documentElement.style.overflowY = fortune ? 'auto' : 'hidden';
-
-    return () => {
-      document.documentElement.style.overflowY = 'auto';
-    };
-  }, [fortune]);
-
 
   function getDateRange(): string {
     const date = new Date();

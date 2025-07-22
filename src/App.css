@@ -1,28 +1,31 @@
 @import "tailwindcss";
 
+
+
 /* Global text color */
-* {
+*,
+*::before,
+*::after {
   color: white;
   box-sizing: border-box;
 }
-
 /* HTML and Body setup for scrollable layout */
 html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  min-height: 100svh;
-  background: #000;
+  border: none;
+  outline: none;
   font-family: sans-serif;
   overscroll-behavior: none;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
+
 /* Main app container */
 #root {
   position: relative;
-  min-height: 100svh;
   width: 100%;
   z-index: 0;
   background: radial-gradient(ellipse at top left, #3a0ca3 0%, transparent 25%),

@@ -1,5 +1,5 @@
 
-import { useState, useRef, ChangeEvent } from 'react';
+import { useState, useRef, ChangeEvent, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
 import whisper from './assets/whisper.mp3';
@@ -12,6 +12,15 @@ function App(): JSX.Element {
   const [birthplace, setBirthplace] = useState<string>('');
   const [fortune, setFortune] = useState<string>('');
   const [loading, setLoading] = useState<boolean>(false);
+
+  useEffect(() => {
+    document.documentElement.style.overflowY = fortune ? 'auto' : 'hidden';
+
+    return () => {
+      document.documentElement.style.overflowY = 'auto';
+    };
+  }, [fortune]);
+
 
   function getDateRange(): string {
     const date = new Date();
@@ -73,7 +82,7 @@ function App(): JSX.Element {
     setLoading(true);
 
     if (whisperAudio) {
-      whisperAudio.volume = 0.4;
+      whisperAudio.volume = 0.2;
       whisperAudio.loop = true;
       whisperAudio.play();
     }
@@ -125,7 +134,7 @@ function App(): JSX.Element {
   return (
     <>
       <div className="stars-layer"></div>
-      <div className="w-[100svw] relative mx-auto min-h-[100svh] ">
+      <div className="w-[100svw] relative mx-auto h-[100%] min-h-[100vh] ">
         <div className="w-[96%] mx-auto relative pt-10 text-center text-black">
           <h2 className="maintext text-[38px] md:text-[48px]">Cosmic Fortune Teller</h2>
           <h2 className="text-[16px] pt-2">

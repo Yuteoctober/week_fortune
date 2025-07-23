@@ -144,7 +144,7 @@ function App(): JSX.Element {
                 Birth Date:
               </label>
               <input
-                className="border p-1 md:p-2 rounded-md"
+                className="border p-2 rounded-md text-sm md:text-md"
                 type="date"
                 id="birthdate"
                 value={birthdate}
@@ -160,7 +160,7 @@ function App(): JSX.Element {
               <input
                 type="time"
                 id="birthtime"
-                className="border p-1 md:p-2 rounded-md"
+                className="border p-2 rounded-md text-sm md:text-md"
                 value={birthtime}
                 onChange={handleTimeChange}
                 required
@@ -175,7 +175,7 @@ function App(): JSX.Element {
                 type="text"
                 id="timezone"
                 placeholder="City, Country"
-                className="border p-1 md:p-2 rounded-md"
+                className="border p-2 rounded-md text-sm md:text-md"
                 value={birthplace}
                 onChange={handlePlaceChange}
                 required

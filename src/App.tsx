@@ -193,8 +193,8 @@ function App(): JSX.Element {
         </div>
 
         {loading && !fortune && (
-          <div className="absolute left-1/2 opacity-50 -translate-x-1/2 top-1/3 z-50 ease-in-out transition-all duration-[2000ms]">
-            <img src={loader} alt="loading..." className="loader w-[200px]" />
+          <div className="grid place-items-center absolute top-0 w-[100svw] h-[100svh] bg-black/50 z-50 ease-in-out transition-all duration-[2000ms]">
+            <img src={loader} alt="loading..." className="w-[200px] opacity-60 ease-in-out transition-all duration-[2000ms]" />
           </div>
         )}
 

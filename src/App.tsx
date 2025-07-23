@@ -128,23 +128,23 @@ function App(): JSX.Element {
       <div className="stars-layer"></div>
       <div className="w-[100svw] relative mx-auto h-[100%] min-h-[100vh] ">
         <div className="w-[96%] mx-auto relative pt-10 text-center text-black">
-          <h2 className="maintext text-[38px] md:text-[48px]">Cosmic Fortune Teller</h2>
-          <h2 className="text-[16px] pt-2">
+          <h2 className="maintext text-[38px] md:text-[48px] ">Cosmic Fortune Teller</h2>
+          <h2 className="text-[16px] pt-">
             Discover your weekly astrology reading through the stars
           </h2>
         </div>
 
-        <div className="birthinfo_container w-[90%] md:w-[94%] max-w-[1200px] h-fit relative mx-auto p-6 border-2 md:pb-10 border-amber-50/70 rounded-lg ">
-          <h2 className="text-[30px] font-bold">Birth Details</h2>
-          <p>Enter your birth details to receive your personalized cosmic reading</p>
+        <div className="birthinfo_container w-[90%] md:w-[94%] max-w-[1200px] h-fit relative mx-auto p-6 border-2 md:pb-10 border-[#8d81f8de]/80 rounded-lg ">
+          <h2 className="text-[28px] font-bold">Birth Details</h2>
+          <p className='text-[14px] md:text-[14px]'>Enter your birth details to receive your personalized cosmic reading</p>
 
           <div className="flex flex-col md:flex-row md:justify-around md:items-start mt-4 gap-4">
             <div className="flex flex-col w-full md:w-1/3">
-              <label htmlFor="birthdate" className="text-md mb-1">
+              <label htmlFor="birthdate" className="text-sm md:text-md mb-1">
                 Birth Date:
               </label>
               <input
-                className="border p-2 rounded-md"
+                className="border p-1 md:p-2 rounded-md"
                 type="date"
                 id="birthdate"
                 value={birthdate}
@@ -154,13 +154,13 @@ function App(): JSX.Element {
             </div>
 
             <div className="flex flex-col w-full md:w-1/3">
-              <label htmlFor="birthtime" className="text-md mb-1">
+              <label htmlFor="birthtime" className="text-sm md:text-md mb-1">
                 Birth Time:
               </label>
               <input
                 type="time"
                 id="birthtime"
-                className="border p-2 rounded-md"
+                className="border p-1 md:p-2 rounded-md"
                 value={birthtime}
                 onChange={handleTimeChange}
                 required
@@ -168,14 +168,14 @@ function App(): JSX.Element {
             </div>
 
             <div className="flex flex-col w-full md:w-1/3">
-              <label htmlFor="birthplace" className="text-md mb-1">
+              <label htmlFor="birthplace" className="text-sm md:text-md mb-1">
                 Place of Birth:
               </label>
               <input
                 type="text"
                 id="timezone"
                 placeholder="City, Country"
-                className="border p-2 rounded-md"
+                className="border p-1 md:p-2 rounded-md"
                 value={birthplace}
                 onChange={handlePlaceChange}
                 required

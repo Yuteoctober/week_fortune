@@ -57,7 +57,7 @@ html, body {
   border-radius: 1rem;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 20px rgba(139, 91, 235, 0.45);
   z-index: 10;
 }
 

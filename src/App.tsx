@@ -1,5 +1,5 @@
 
-import { useState, useRef, ChangeEvent, useEffect } from 'react';
+import { useState, useRef, ChangeEvent } from 'react';
 import axios from 'axios';
 import './App.css';
 import whisper from './assets/whisper.mp3';
